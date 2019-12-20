@@ -13,39 +13,31 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body>
-
+<body id="body">
     <main role="main" class="background">
+    <nav class="hidden menu role=" navigation">
+        <ul>
+            <a href="#bio" >
+                <li>Bio</li>
+            </a>
+            <a href="#contact">
+                <li>Contact Info</li>
+            </a>
+            <a href="#project1">
+                <li>Projects</li>
+            
+            <a href="#speech-bubble">
+                <li>Get Started</li>
+            </a>
+        </ul>
+    </nav>
+    
         <header id="header" class="col-12" role="banner">
             <h1 class="quote">JT Liner | Software Engineer</h1>
             <!-- <p><i style="font-size:24px" class="fa">&#xf13c;</i><i style="font-size:24px" class="fa">&#xf13b;</i><i class="fa fa-js"></i></p> -->
         </header>
-        <nav class="col-2 hidden menu role=" navigation">
-            <ul>
-                <a href="#bio">
-                    <li>Bio</li>
-                </a>
-                <a href="#contact">
-                    <li>Contact Info</li>
-                </a>
-                <a href="#project1">
-                    <li>Project 1</li>
-                </a>
-                <a href="#project2">
-                    <li>Project 2</li>
-                </a>
-                <a href="#project3">
-                    <li>Project 3</li>
-                </a>
-                <a href="#project4">
-                    <li>Project 4</li>
-                </a>
-                <a href="#speech-bubble">
-                    <li>Get Started</li>
-                </a>
-            </ul>
-        </nav>
-        <section class="col-6">
+        
+        <section class="col-8">
             <section class="aside">
                 <div class="bio-title">Bio</div>
                 <p id="bio">I live in the Austin area but grew up in West Texas with dirt fields and mesquite trees.
@@ -63,10 +55,11 @@
 
 
         </section>
-        <section class="projects col-4" id="seth-quote">
+        <section class="projects col-4 seth" >
             <section class="aside">
-                <div>“Art is the act of a human being doing generous work, creating something for the
-                    first time, touching another person.” <br><br><span id="seth-name">- Seth Godin</span></div><br>
+                <div id="seth-quote">“Art is the act of a human being doing generous work, creating something for the
+                    first time, touching another person.” <br><br></div>
+                    <div><span id="seth-name">- Seth Godin</span><//div><div></div><br>
 
             </section>
         </section>
@@ -78,50 +71,52 @@
                 <div id="project1">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
                         class="img" src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
-                <p>HTML/CSS/JavaScript/jQuery</p>
+                        <div class= "logo-container" ><img class= "logo" src="/html-css-js.png" alt="html css js">
+                        <a href="https://github.com/thinkful-ei-jaguar/quiz-app-project-BladeJT">Github</a></div>
             </section>
 
             <section class="project col-5">
                 <div id="project2">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
                         src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
-                <p>HTML/CSS/JavaScript/jQuery</p>
+                        <div class= "logo-container" ><img class= "logo" src="/html-css-js.png" alt="html css js">
+                            <a href="https://github.com/thinkful-ei-jaguar/quiz-app-project-BladeJT">Github</a></div> 
             </section>
             <section class="project col-5">
                 <div id="project3">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
                         src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
-                <p>HTML/CSS/JavaScript/jQuery</p>
+                        <div class= "logo-container" ><img class= "logo" src="/html-css-js.png" alt="html css js">
+                            <a href="https://github.com/thinkful-ei-jaguar/quiz-app-project-BladeJT">Github</a></div>
             </section>
 
             <section class="project col-5">
                 <div id="project4">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
                         src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
-                <p>HTML/CSS/JavaScript/jQuery</p>
+                        <div class= "logo-container" ><img class= "logo" src="/html-css-js.png" alt="html css js">
+                            <a href="https://github.com/thinkful-ei-jaguar/quiz-app-project-BladeJT">Github</a></div>
             </section>
         </section>
-        <section class="col-12 right row">
-            <section class="aside-b col-4">
+        <section class="contact-section right row">
+            <section class="aside-b col-6">
                 <div id="contact">Contact info</div>
                 <div class="aside-b">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-google"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                    <a href="#" class="fa fa-github"></a>
-                    <a href="#" class="fa fa-slack"></a>
+                    <a href="mailto:jtliner925@gmail.com" class="fa fa-google"></a>
+                    <a href="https://www.linkedin.com/in/jt-liner-916a2a53/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/JTLiner925" class="fa fa-github"></a>
                 </div>
 
             </section>
-            <section class="aside-b col-4" id="speech-bubble">
+            <section class="aside-b col-6" id="speech-bubble">
                 Email me to get things started...
-                <i class="fa fa-envelope" style="font-size:36px"></i>
+                <a href="mailto:jtliner925@gmail.com" class="fa fa-envelope" style="font-size:36px"></a>
             </section>
 
         </section>
 
     </main>
-    <a href="#header">
+    <a href="#body">
         <footer class="col-12" role="content-info">Back to Top</footer>
     </a>
 </body>

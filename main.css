@@ -2,7 +2,10 @@
     box-sizing: border-box;
   }
 
-
+a:link {
+  text-decoration: none;
+  text-justify: auto;
+}
   .row::after {
     content: "";
     clear: both;
@@ -20,35 +23,38 @@
     font-size: 20px;
     
 }
+html {
+  font-family: 'Rajdhani', sans-serif;
+}
+nav {
   
-  nav, li {
-    visibility: visible;
-    margin-bottom: 7px;
-    padding: 5% 0; 
-    color: #29a19c;
+  height: 24px;
+  
+}
+ul {
+  margin: 0;
+  padding-top: 5px;
+  background-color: #151965;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  
+}
+  
+  li {
+    color: #37c2bd;
     text-shadow: .5px .5px #1d4d4f;
-    font-size: 12px;
+    font-size: 16px;
     opacity: .8;
-      border-radius: 12px;
-      padding: 5px;
       transition: .2s;
       cursor: pointer;
+      display: inline;
+      opacity: .8;
     
   }
-  li {
-    padding-top: 20px;
-    padding-right: 15px;
-    height: 3.85em;
-    /* border: .3px solid a35638; */
-}
  
-  .menu ul {
   
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-  }
   nav li:hover {
    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
    /* background-color: #91bd3a; */
@@ -57,9 +63,7 @@
    opacity: 1;
 
   }
-  html {
-    font-family: 'Rajdhani', sans-serif;
-  }
+  
   body { 
     /* color: #444; */
     text-align: center;
@@ -76,17 +80,18 @@
     font-family: 'Rock Salt', cursive;
     position: absolute;
     /* font-weight: bold; */
-    top: 10px;
+    /* top: 20px; */
     left: 0;
     width: 100%;
     text-align: center;
     color: #29a19c;
     text-shadow: 1px 1px #1d4d4f;
     font-size: 24px;
-
+    align-items: center;
   }
   
-  header {
+  #header {
+    border-top:1pt solid #ffffff;
     /* padding: 0 0; */
     background-image: url('/banner.jpg');
     background-repeat: no-repeat;
@@ -95,6 +100,7 @@
     width: 100%;
     max-height: 150px;
     min-height: 150px;
+    padding-top: 0;
     /* box-shadow: 0 0 8px 8px #f9f6f7 inset; */
 
   }
@@ -106,12 +112,23 @@
     font-size: 12px;
     padding: 20px;
   }
-  #seth-quote {
+.contact-section {
+  display: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+  .seth {
+    margin-top: 15%;
+  }
+  #seth-quote{
 margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center; 
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Rock Salt', cursive;
 
   }
@@ -119,6 +136,20 @@ margin-top: 10%;
     font-size: 20px;
     font-family: 'Rock Salt', cursive;
   }
+  .logo-container {
+    margin: 0 0;
+    text-align: left;
+   
+  }
+  .logo {
+    max-height: 30px;
+    margin-top: 5px;
+    width: auto;
+    text-align: left;
+  
+    
+  }
+  
   section {
     min-height: 100px;
     /* padding: 6% 0; */
@@ -184,11 +215,6 @@ margin-top: 10%;
 .fa:hover {
   opacity: 0.7;
 }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
   .fa-google {
     background: #dd4b39;
     color: white;
@@ -198,10 +224,6 @@ margin-top: 10%;
     color: white;
   }
   .fa-github {
-    background: #2c4762;
-    color: white;
-  }
-  .fa-slack {
     background: #2c4762;
     color: white;
   }
