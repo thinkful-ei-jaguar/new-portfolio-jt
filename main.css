@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
   }
-  
+
+
   .row::after {
     content: "";
     clear: both;
@@ -15,13 +16,18 @@
   .hidden {
     display: none;
   }
- 
+  #contact {
+    font-size: 20px;
+    
+}
+  
   nav, li {
     visibility: visible;
     margin-bottom: 7px;
     padding: 5% 0; 
     color: #29a19c;
     text-shadow: .5px .5px #1d4d4f;
+    font-size: 12px;
     opacity: .8;
       border-radius: 12px;
       padding: 5px;
@@ -52,14 +58,13 @@
 
   }
   html {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rajdhani', sans-serif;
   }
   body { 
-    font-size: 20px;
     /* color: #444; */
     text-align: center;
     line-height: 1.5;
-    background-color: #f9f6f7;
+    background-color: #ffffff;
   }
   
   footer {
@@ -68,33 +73,57 @@
     color: #a35638
   }
   .quote {
-    position: relative;
+    font-family: 'Rock Salt', cursive;
+    position: absolute;
     /* font-weight: bold; */
-    top: 50px;
-    left: 15px;
-    padding: 15px;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
     color: #29a19c;
     text-shadow: 1px 1px #1d4d4f;
+    font-size: 24px;
 
   }
   
   header {
     /* padding: 0 0; */
-    background-image: url('/mountain-overlook.jpg');
+    background-image: url('/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 0 8px 8px #f9f6f7 inset;
+    padding-bottom: 10px;
+    width: 100%;
+    max-height: 150px;
+    min-height: 150px;
+    /* box-shadow: 0 0 8px 8px #f9f6f7 inset; */
+
+  }
+  .bio-title {
+    font-family: 'Rock Salt', cursive;
   }
   #bio {
     text-align: left;
+    font-size: 12px;
+    padding: 20px;
+  }
+  #seth-quote {
+margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 16px;
+    font-family: 'Rock Salt', cursive;
+
+  }
+  #seth-name {
+    font-size: 20px;
+    font-family: 'Rock Salt', cursive;
   }
   section {
     min-height: 100px;
-    padding: 6% 0;
+    /* padding: 6% 0; */
     /* background-color: #a66933;  */
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
+    
     color: #a35638;
     text-align: center;
     line-height: 1.5;
@@ -103,28 +132,54 @@
     width: 100%;
     height: auto;
   }
+  .current-projects {
+    color: #a35638;
+    font-size: 24px;
+    font-display: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-family: 'Rock Salt', cursive;
+  }
   .my-projects {
-    margin-top: 10%;
+    margin-top: 5%;
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+  }
+  .project {
+    font-size: 16px;
   }
   
   .aside {
     /* background-color: #a66933; */
     margin-top: 10%; 
-    margin-left: 10%;
+    /* margin-left: 10%; */
     color: #a35638;
     /* text-align: center; */
-    /* font-size: 14px;   */
+    font-size: 16px;  
+}
+.aside-b{
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  color: #a35638;
+  font-size: 16px;  
+
 }
 
 .fa {
-  padding: 20px;
+  margin: 2px;
+  padding: 7px;
   font-size: 30px;
-  width: 30px;
-  text-align: left;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
   text-decoration-line: none;
   /* margin: 5px; */
-  border-radius: 15px;
-  font-size: 24px;
+  border-radius: 50%;
 }
 .fa:hover {
   opacity: 0.7;
@@ -155,7 +210,9 @@
     position: relative;
     background: #00aabb;
     border-radius: .4em;
-    margin-left: 10%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }
   
   #speech-bubble:after {
@@ -175,7 +232,6 @@
 
   footer {
     text-align: center;
-    font-size: 12px;
     padding: 15px;
     border-top: 1px solid #1d4d4f;
     /* color: ;
@@ -186,7 +242,7 @@
     width: 100%;
   }
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 500px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -204,5 +260,13 @@
     .hidden {
         display: inline;
       }
-    
+    .aside {
+      font-size: 16px;
+    }
+    #bio {
+      font-size: 12px;
+    }
+    .quote {
+      font-size: 32px;
+    }
   }

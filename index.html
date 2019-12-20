@@ -7,6 +7,7 @@
     <!-- For apple devices -->
     <link rel="apple-touch-icon" type="image/png" href="/icons8-alps-48.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600|Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -19,7 +20,7 @@
             <h1 class="quote">JT Liner | Software Engineer</h1>
             <!-- <p><i style="font-size:24px" class="fa">&#xf13c;</i><i style="font-size:24px" class="fa">&#xf13b;</i><i class="fa fa-js"></i></p> -->
         </header>
-        <nav class="col-3 hidden menu" role="navigation">
+        <nav class="col-2 hidden menu role=" navigation">
             <ul>
                 <a href="#bio">
                     <li>Bio</li>
@@ -44,53 +45,56 @@
                 </a>
             </ul>
         </nav>
-        <section class="projects col-7">
+        <section class="col-6">
             <section class="aside">
-                <div>Bio</div>
+                <div class="bio-title">Bio</div>
                 <p id="bio">I live in the Austin area but grew up in West Texas with dirt fields and mesquite trees.
                     With all the rolling hills and streams nearby it makes it easy to allow your mind to wander! Most
                     recently, I was working as a Bakery Manager at a grocery store when I decided it was time for a
-                    change.</p><br>
-
-                <div class="seth-quote">“Art is the act of a human being doing generous work, creating something for the
-                    first time, touching another person.” <br><span id="seth-name">- Seth Godin</span></div><br>
-
-                <p class="bio"> I love thinking outside the box and being creative. To be able to help others create
+                    change. <br><br>
+                    I love thinking outside the box and being creative. To be able to help others create
                     content that is important to them is exciting for me and the reason why I got into being a
-                    developer. <br>
-
+                    developer. <br><br>
                     In my spare time ...well, I don’t have any! Instead, I am happily married with three kids! We drive
-                    a min-van, go hiking, and love Jesus. Below I have some examples of my art, stay tuned for more!
+                    a min-van, go hiking, and love Jesus. Below I have some examples of my work, stay tuned for more!
                 </p>
 
             </section>
 
+
         </section>
-<br>
-        <section class= "my-projects col-12">
-            <h2>Current Projects</h2>
-            <section class= "project col-6">
+        <section class="projects col-4" id="seth-quote">
+            <section class="aside">
+                <div>“Art is the act of a human being doing generous work, creating something for the
+                    first time, touching another person.” <br><br><span id="seth-name">- Seth Godin</span></div><br>
+
+            </section>
+        </section>
+        <br>
+        <h2 class="current-projects col-12">Current Projects</h2>
+        <section class="my-projects col-12">
+
+            <section class="project col-5">
                 <div id="project1">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
-                        src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
+                        class="img" src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
                 <p>HTML/CSS/JavaScript/jQuery</p>
             </section>
 
-            <section class= "project col-6">
+            <section class="project col-5">
                 <div id="project2">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
                         src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
                 <p>HTML/CSS/JavaScript/jQuery</p>
             </section>
-
-            <section class= "project col-6">
+            <section class="project col-5">
                 <div id="project3">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
                         src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
                 <p>HTML/CSS/JavaScript/jQuery</p>
             </section>
 
-            <section class= "project col-6">
+            <section class="project col-5">
                 <div id="project4">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"><img
                         src="/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
@@ -98,16 +102,18 @@
             </section>
         </section>
         <section class="col-12 right row">
-            <section class="aside col-4">
+            <section class="aside-b col-4">
                 <div id="contact">Contact info</div>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-github"></a>
-                <a href="#" class="fa fa-slack"></a>
+                <div class="aside-b">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-slack"></a>
+                </div>
 
             </section>
-            <section class="aside col-4" id="speech-bubble">
+            <section class="aside-b col-4" id="speech-bubble">
                 Email me to get things started...
                 <i class="fa fa-envelope" style="font-size:36px"></i>
             </section>
@@ -115,7 +121,9 @@
         </section>
 
     </main>
-    <a href="#header"><footer class="col-12" role="content-info">Back to Top</footer></a>
+    <a href="#header">
+        <footer class="col-12" role="content-info">Back to Top</footer>
+    </a>
 </body>
 
 </html>
