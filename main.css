@@ -43,7 +43,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+  border-bottom:1pt solid #ffffff;
   
 }
   
@@ -79,7 +79,9 @@ ul {
   footer {
     padding: 5% 0;
     /* background-color: #113059; */
-    color: #a35638
+    color: #46185f;
+    text-shadow: 1px 1px #ad62aa;
+    font-size: 24px;
   }
   .quote {
     font-family: 'Rock Salt', cursive;
@@ -96,9 +98,9 @@ ul {
   }
   
   #header {
-    border-top:1pt solid #ffffff;
+    
     /* padding: 0 0; */
-    background-image: url('/banner.jpg');
+    background-image: url('/new-portfolio-jt/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 10px;
@@ -106,15 +108,20 @@ ul {
     max-height: 150px;
     min-height: 150px;
     padding-top: 0;
+    border-style: ridge ;
+    border-color: #46185f;
     /* box-shadow: 0 0 8px 8px #f9f6f7 inset; */
 
   }
   .bio-title {
+    font-size: 30px;
+    color: #29a19c;
+    text-shadow: 1px 1px #1d4d4f;
     font-family: 'Rock Salt', cursive;
   }
   #bio {
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
     padding: 20px;
   }
 .last-section {
@@ -125,6 +132,7 @@ ul {
 
   .seth {
     margin-top: 15%;
+    
   }
   #seth-quote{
 margin-top: 10%;
@@ -133,11 +141,14 @@ margin-top: 10%;
     align-items: center; 
     font-size: 12px;
     font-family: 'Rock Salt', cursive;
-
+    color: #413c69;
+    text-shadow: .5px .5px #ad62aa;
   }
   #seth-name {
     font-size: 20px;
     font-family: 'Rock Salt', cursive;
+    color: #413c69;
+    text-shadow: 1px 1px #ad62aa;
   }
   .logo-container {
     margin: 0 0;
@@ -158,21 +169,33 @@ margin-top: 10%;
     /* padding: 6% 0; */
     /* background-color: #a66933;  */
     
-    color: #a35638;
+    color: #46185f;
     text-align: center;
     line-height: 1.5;
   } 
+ 
   .quiz-app, img{
     width: 100%;
     height: auto;
   }
+
+  h2 {
+    background-image: url('/new-portfolio-jt/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: ridge ;
+    border-color: #46185f;
+
+  }
   .current-projects {
-    color: #a35638;
-    font-size: 24px;
+    margin: 0;
+    color: #29a19c;
+    text-shadow: 1px 1px #1d4d4f;
+    font-size: 20px;
     font-display: absolute;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 70px;
     font-family: 'Rock Salt', cursive;
   }
   .my-projects {
@@ -180,7 +203,7 @@ margin-top: 10%;
     display: absolute;
     justify-content: center;
     align-items: center;
-    margin-left: 7%;
+    
   }
   .project {
     font-size: 16px;
@@ -190,7 +213,7 @@ margin-top: 10%;
     /* background-color: #a66933; */
     margin-top: 10%; 
     /* margin-left: 10%; */
-    color: #a35638;
+    color: #46185f;
     /* text-align: center; */
     font-size: 16px;  
 }
@@ -199,7 +222,7 @@ margin-top: 10%;
   display: absolute;
   justify-content: center;
   align-items: center;
-  color: #a35638;
+  color: #46185f;
   font-size: 16px;  
 
 }
@@ -260,6 +283,11 @@ margin-top: 10%;
     text-align: center;
     padding: 15px;
     border-top: 1px solid #1d4d4f;
+    background-image: url('/new-portfolio-jt/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: ridge ;
+    border-color: #46185f;
     /* color: ;
     background-color: ; */
   }
@@ -268,7 +296,7 @@ margin-top: 10%;
     width: 100%;
   }
   
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 600px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -289,8 +317,11 @@ margin-top: 10%;
     .aside {
       font-size: 16px;
     }
-    #bio {
-      font-size: 12px;
+    .current-projects {
+      font-size: 24px;
+    }
+    .my-projects {
+      margin-left: 7%;
     }
     .quote {
       font-size: 32px;
