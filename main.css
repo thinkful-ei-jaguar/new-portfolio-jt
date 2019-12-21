@@ -5,6 +5,7 @@
 a:link {
   text-decoration: none;
   text-justify: auto;
+  
 }
   .row::after {
     content: "";
@@ -15,6 +16,10 @@ a:link {
   [class*="col-"] {
     float: left;
     padding: 15px;
+  }
+
+  #section2 {
+    float: right;
   }
   .hidden {
     display: none;
