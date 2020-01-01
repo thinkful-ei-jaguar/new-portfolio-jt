@@ -17,7 +17,7 @@ a:link {
   #section2 {
     float: right;
   }
-  .hidden {
+  .hidden2 {
     display: none;
   }
   #contact {
@@ -26,33 +26,7 @@ a:link {
 html {
   font-family: 'Rajdhani', sans-serif;
 }
-nav {
-  height: 24px;
-}
-ul {
-  margin: 0;
-  padding-top: 5px;
-  background-color: #151965;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom:1pt solid #ffffff;
-  
-}
-  li {
-    color: #37c2bd;
-    text-shadow: .5px .5px #1d4d4f;
-    font-size: 16px;
-    opacity: .8;
-      transition: .2s;
-      cursor: pointer;
-      display: inline;
-      opacity: .8; 
-  }
-  nav li:hover {
-   color: #207561;
-   opacity: 1;
-  }
+
   body { 
     text-align: center;
     line-height: 1.5;
@@ -243,12 +217,83 @@ margin-top: 10%;
     border-style: ridge ;
     border-color: #46185f;
   }
+  .hamburger {
+    width: 48px;
+    height: 42px;
+    border: 1px solid #eeeeef;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #eeeeef;
+    padding: 10px 10px;
+    /* Hamburger menu is a bit out of place in the HTML flow, but it's always
+     * going to live top-right, so we can position absolutely and not worry
+     * too much */
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  cursor:pointer;
+}
+
+.hamburger-stripe {
+    background-color: #6799ff;
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20vw;
+  height: 35vh;
+  border: 1px solid #000;
+  opacity: 1;
+/*   background-color: #f2f2f2; */
+  background-color: rgba(242,242,242,0.75);
+  z-index: 10;
+/*   display: block; */
+/*  to use transition we can't use display  */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+/*   display: none; */
+/*  to use transition we can't use display  */
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.menu .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.75em;
+  cursor: pointer;
+/* if you don't want a border   */
+/*  switch off all below  */
+  width: 1em;
+  height: 1em;
+  line-height: 15px;
+  border: 1px solid #000;
+  padding: 5'px;
+  border-radius: 100%;
+  background-color: lightgray;
+}
+
+.menu .links {
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
   }
   
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 576px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -277,4 +322,39 @@ margin-top: 10%;
     .quote {
       font-size: 32px;
     }
+    .hamburger {
+      display: none;
+    }
+    .hidden2 {
+      display: inline;
+    }
+    nav {
+      height: 24px;
+    }
+    ul {
+      margin: 0;
+      padding-top: 5px;
+      background-color: #151965;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      border-bottom:1pt solid #ffffff;
+      
+    }
+      li {
+        margin-right: 40px;
+        /* margin-left: 20px; */
+        color: #37c2bd;
+        text-shadow: .5px .5px #1d4d4f;
+        font-size: 24px;
+        opacity: .8;
+          transition: .2s;
+          cursor: pointer;
+          display: inline;
+          opacity: .8; 
+      }
+      nav li:hover {
+       color: #207561;
+       opacity: 1;
+      }
   }

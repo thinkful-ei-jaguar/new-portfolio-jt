@@ -15,7 +15,26 @@
 
 <body id="body">
     <main class="background">
-        <nav class="hidden menu">
+
+            <div class="splash-nav">
+                    <div class="hamburger">
+                      <div class="hamburger-stripe"></div>
+                      <div class="hamburger-stripe"></div>
+                      <div class="hamburger-stripe"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="menu hidden">
+                    <span class="close">&times;</span>
+                    <div class="links">
+                      <a href="#bio" >Bio</a>
+                      <a href="#contact" >Contact Info</a>
+                      <a href="#project1" >Projects</a>
+                      <a href="#speech-bubble" >Get Started</a>
+                    </div>
+                  </div>
+
+        <nav class="hidden2 menu2">
             <ul>
                 <li>
                     <a href="#bio">Bio</a>
@@ -30,9 +49,8 @@
                 </li>
 
                 <li>
-                    <a href="#speech-bubble">Get Started</a>
+                    <a href="#speech-bubble" >Get Started</a>
                 </li>
-
             </ul>
         </nav>
 
@@ -75,10 +93,10 @@
         <section class="my-projects col-12">
 
             <section class="project col-5">
-                <div>Jaguar Quiz App</div>
+                <div id="project1">Jaguar Quiz App</div>
                 <a class="quiz-app" href="https://thinkful-ei-jaguar.github.io/quiz-app-project-BladeJT/"
                     target="_blank">
-                    <img src="/new-portfolio-jt/jaguar-image.jpg" alt="mean jaguar looking at you">Go to Page</a>
+                    <img src="/new-portfolio-jt/jaguar-image.jpg" alt="mean jaguar looking at you"></a>
                 <div class="logo-container"><img class="logo" src="/new-portfolio-jt/html-css-js.png" alt="html css js">
                     <a href="https://github.com/thinkful-ei-jaguar/quiz-app-project-BladeJT" target="_blank">Github</a>
                 </div>
@@ -154,6 +172,8 @@
     <a href="#body">
         <footer class="col-12">Back to Top</footer>
     </a>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
