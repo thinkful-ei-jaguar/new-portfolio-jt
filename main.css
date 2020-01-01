@@ -343,12 +343,12 @@ margin-top: 10%;
       border-bottom:1pt solid #ffffff;
       
     }
-       a {
+       a, li{
         
-        margin-right: 40px;
+        margin-right: 20px;
         color: #37c2bd;
         text-shadow: 1px 2px #ad62aa;
-        font-size: 32px;
+        font-size: 24px;
         opacity: .8;
           transition: .2s;
           cursor: pointer;
