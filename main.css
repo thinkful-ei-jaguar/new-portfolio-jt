@@ -1,23 +1,19 @@
 * {
     box-sizing: border-box;
   }
-
 a:link {
   text-decoration: none;
   text-justify: auto;
-  
 }
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
-
   [class*="col-"] {
     float: left;
     padding: 15px;
   }
-
   #section2 {
     float: right;
   }
@@ -26,15 +22,12 @@ a:link {
   }
   #contact {
     font-size: 20px;
-    
 }
 html {
   font-family: 'Rajdhani', sans-serif;
 }
 nav {
-  
   height: 24px;
-  
 }
 ul {
   margin: 0;
@@ -42,11 +35,8 @@ ul {
   background-color: #151965;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  
-  
+  align-items: center; 
 }
-  
   li {
     color: #37c2bd;
     text-shadow: .5px .5px #1d4d4f;
@@ -55,37 +45,24 @@ ul {
       transition: .2s;
       cursor: pointer;
       display: inline;
-      opacity: .8;
-    
+      opacity: .8; 
   }
- 
-  
   nav li:hover {
-   /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
-   /* background-color: #91bd3a; */
    color: #207561;
-   /* border-bottom: .5pt solid #207561; */
    opacity: 1;
-
   }
-  
   body { 
-    /* color: #444; */
     text-align: center;
     line-height: 1.5;
     background-color: #ffffff;
   }
-  
   footer {
     padding: 5% 0;
-    /* background-color: #113059; */
     color: #a35638
   }
   .quote {
     font-family: 'Rock Salt', cursive;
     position: absolute;
-    /* font-weight: bold; */
-    /* top: 20px; */
     left: 0;
     width: 100%;
     text-align: center;
@@ -94,11 +71,9 @@ ul {
     font-size: 24px;
     align-items: center;
   }
-  
   #header {
     border-top:1pt solid #ffffff;
-    /* padding: 0 0; */
-    background-image: url('/banner.jpg');
+    background-image: url('/new-portfolio-jt/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 10px;
@@ -106,8 +81,6 @@ ul {
     max-height: 150px;
     min-height: 150px;
     padding-top: 0;
-    /* box-shadow: 0 0 8px 8px #f9f6f7 inset; */
-
   }
   .bio-title {
     font-family: 'Rock Salt', cursive;
@@ -118,13 +91,10 @@ ul {
     padding: 20px;
   }
 .contact-section {
-  display: absolute;
     justify-content: center;
     align-items: center;
     margin: 10px;
-
 }
-
   .seth {
     margin-top: 15%;
   }
@@ -135,7 +105,6 @@ margin-top: 10%;
     align-items: center; 
     font-size: 12px;
     font-family: 'Rock Salt', cursive;
-
   }
   #seth-name {
     font-size: 20px;
@@ -144,22 +113,15 @@ margin-top: 10%;
   .logo-container {
     margin: 0 0;
     text-align: left;
-   
   }
   .logo {
     max-height: 30px;
     margin-top: 5px;
     width: auto;
-    text-align: left;
-  
-    
+    text-align: left; 
   }
-  
   section {
     min-height: 100px;
-    /* padding: 6% 0; */
-    /* background-color: #a66933;  */
-    
     color: #a35638;
     text-align: center;
     line-height: 1.5;
@@ -171,7 +133,6 @@ margin-top: 10%;
   .current-projects {
     color: #a35638;
     font-size: 24px;
-    font-display: absolute;
     justify-content: center;
     align-items: center;
     height: 30px;
@@ -179,7 +140,6 @@ margin-top: 10%;
   }
   .my-projects {
     margin-top: 5%;
-    display: absolute;
     justify-content: center;
     align-items: center;
     margin-left: 7%;
@@ -187,24 +147,17 @@ margin-top: 10%;
   .project {
     font-size: 16px;
   }
-  
   .aside {
-    /* background-color: #a66933; */
     margin-top: 10%; 
-    /* margin-left: 10%; */
     color: #a35638;
-    /* text-align: center; */
     font-size: 16px;  
 }
 .aside-b{
-  display: absolute;
   justify-content: center;
   align-items: center;
   color: #a35638;
   font-size: 16px;  
-
 }
-
 .fa {
   margin: 2px;
   padding: 7px;
@@ -214,7 +167,6 @@ margin-top: 10%;
   justify-content: center;
   text-align: center;
   text-decoration-line: none;
-  /* margin: 5px; */
   border-radius: 50%;
 }
 .fa:hover {
@@ -232,7 +184,6 @@ margin-top: 10%;
     background: #2c4762;
     color: white;
   }
-
   #speech-bubble {
     position: relative;
     background: #00aabb;
@@ -241,7 +192,6 @@ margin-top: 10%;
   justify-content: center;
   align-items: center;
   }
-  
   #speech-bubble:after {
     content: '';
     position: absolute;
@@ -256,19 +206,15 @@ margin-top: 10%;
     margin-top: -10px;
     margin-left: -20px;
   }
-
   footer {
     text-align: center;
     padding: 15px;
     border-top: 1px solid #1d4d4f;
-    /* color: ;
-    background-color: ; */
   }
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
   }
-  
   @media only screen and (min-width: 500px) {
     /* For desktop: */
     .col-1 {width: 8.33%;}
@@ -283,7 +229,6 @@ margin-top: 10%;
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-
     .hidden {
         display: inline;
       }
